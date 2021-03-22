@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <title>Graph</title>
+
+</head>
+<body>
+    <div class="landing_page">
+        <div class="left">
+            <div class="l_top">
+                <div class="icon2">
+                    <img src="/images/butterfly.svg" style="width: 40px;margin-left: .78rem;" alt=""></i>
+                    <img src="/images/search.svg" style="color: rgb(177, 175, 174);height: 18px;width: 18px;margin-left: 1.4rem;" alt="">
+                </div>
+                <div class="icon4">
+                    <img style="background-color: #4935ff;padding: .5rem;border-radius: 7px;width: 40px;margin-left: .78rem;" src="/images/home.svg" alt="">
+                    <img src="/images/newspaper.svg" style="height: 19px;" alt="" id="icse">
+                    <img src="/images/note.svg" alt="" style="height: 19px;" id="icse">
+                    <img src="/images/man.svg" alt=""style="height: 19px;" id="icse" >
+                    <div class="hidden_icon" style="visibility:hidden;" id="icse">
+                        <img src="/images/search.svg" style="color: rgb(177, 175, 174);height: 18px;width: 18px;margin-left: 3rem;" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="l_bottom">
+                <div class="bell">
+                    <img style="height: 26px;" src="/images/Group 8.svg" alt="">
+                </div>
+                <div class="ie">
+                    <img style="height: 19px;margin-left: .2rem;" src="/images/access.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="l_board">
+            <div class="profile">
+                <div class="profile_img">
+                    <img src="./images/profile_image.jpg" alt="">
+                </div>
+                <div class="profile_bio">
+                    <h1>Hi Mike,</h1>
+                    <h3>welcome Back.</h3>
+                </div>
+            </div>
+            <div class="dollar">
+                <h3 style="font-size: 1.5rem;">Today</h3>
+                <h1 style="margin-top: 1rem;font-size: 2.1rem;">$19,892 </h1>
+                <h4 style="margin-top: 0.5rem;font-size: .9rem;">Account Balance</h4>
+                <div>
+                    <div class="tra">
+                        <div class="tra1">
+                            <h1 style="margin-top: 1rem;font-size: 1.5rem;">$4,000 </h1>
+                            <h4 style="margin-top: 0.5rem;font-size: 0.8rem;">Year-to-Date Contributions</h4>
+                        </div>
+                        <div class="tra2">
+                            <h1 style="margin-top: 1rem;font-size: 1.5rem;">$1,892 </h1>
+                            <h4 style="margin-top: 0.5rem;font-size: 0.8rem;">Total Interest</h4>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <button class="menu-btn">I want to <i class="fas fa-caret-down"></i></button>
+                        <div class="menu-content">
+                            <a class="links" href="#">Contact Us</a>
+                            <a class="links" href="#">Visit Us</a>
+                            <a class="links" href="#">About Us</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="transaction">
+                <h3>Recent Transactions</h3>
+                <h4 class="r_transaction">2020-08-07</h4>
+                <h5 class="d_transaction">Withdrawal Transfer to Bank-XXX11</h5>
+                <div class="stroke"></div>
+                <h4 class="r_transaction">2020-08-07</h4>
+                <h5 class="d_transaction">Withdrawal Transfer to Bank-XXX11</h5>
+                <div class="stroke"></div>
+                <h4 class="r_transaction">2020-08-07</h4>
+                <h5 class="d_transaction">Withdrawal Transfer to Bank-XXX11</h5>
+                <div class="stroke"></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="margin">
+                <div class="m_top">
+                    <h3 style="color: #4935ff;">Retirement Income</h3>
+                    <h2>Starting Year 2056 </h2>
+                </div>
+                <div class="m_income">
+                    <div class="m_income1">
+                        <h2>$300,000</h2>
+                        <p>My Goal</p>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="income_flex">
+                        <div class="m_income2">
+                            <h2>59%</h2>
+                            <p>Goal Acheived</p>
+                            <div class="dash"></div>
+                        </div>
+                        <div class="m_income3">
+                            <h2>$300</h2>
+                            <p>Est. MOnthly </p>
+                            <div class="dash"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graph">
+                <div class="graph_header">
+                    <h3>Contributions Overtime</h3>
+                </div>
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <img class="i_check" src="/images/checked.svg" alt="">
+                <script>
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                        var stackedBar = new Chart(ctx, {
+                                type: 'bar',
+                                data: {
+                                labels: ['20', '', '25', '', '30', '', '35','','40','','60','','65'],
+                                datasets: [{
+                                    label:'Employer: K 73,500',
+                                    backgroundColor: '#0800A3',
+                                    data: [15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100]
+                                },{
+                                    label: 'Employee: K 52,500',
+                                    backgroundColor: '#4834FE',
+                                    data: [15, 20, 25, 30, 35, 40, 45, 56, 60, 70, 80, 90, 100]
+                                },{
+                                    label: 'Total Interest: K 244,313',
+                                    backgroundColor: '#85AFFF',
+                                    data: [15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100]
+                                }]
+                            },
+                                options: {
+                                    
+                                    legend: {
+                                        labels:{
+                                            boxWidth:15,
+                                            fontSize: 10,
+                                            fontFamily: "'Roboto Slab', serif"
+                                        },
+                                        position: 'top' // place legend on the right side of chart
+                                    },
+                                    scales: {
+                                        xAxes: [{
+                                            barPercentage: 0.5,
+                                            stacked: true
+                                        }],
+                                        yAxes: [{
+                                            ticks:{
+                                                callback: function (value, index, values) {
+                                                return '$' + value;
+                                            },
+                                                max: 300,
+                                                min: 0,
+                                                stepSize: 100,
+                                                beginAtZero:true
+                                            },
+                                            stacked: true
+                                        }]
+                                    }
+                                }
+                            });
+                </script>
+            </div>
+            <div class="donut">
+                <div class="top_donut">
+                    <h3>How do I compare to my peers?</h3>
+                    <h5 style="color: #bdbdbd;font-size: 0.7rem;font-weight: lighter;margin-top: .5rem;">These numbers represent current goal achievement</h5>
+                </div>
+                <div class="peers">
+                    <div class="age">
+                        <h4>Age : <select style="border: none;padding: .5rem;" name="" id="" disabled="disabled">
+                            <option value="">Under 30</option>
+                        </select> </h4>
+                        <div class="dash12"></div>
+                        <h4>Salary :<select style="border: none;padding: .5rem;" name="" id="" disabled="disabled">
+                            <option value="">K 20 - K 30</option>
+                        </select></h4>
+                        <div class="dash12"></div>
+                        <h4>Gender : <select style="border: none;padding: .5rem;" name="" id="" disabled="disabled">
+                            <option value="">Male</option>
+                        </select></h4>
+                    </div>
+                    <div class="prog">
+                        <div id="specificChart" class="donut-size prog1">
+                            <div class="pie-wrapper">
+                                <span class="label">
+                                    <span class="num">0</span><span class="smaller">%</span>
+                                </span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div style="font-size: 1rem; text-align: center;">
+                                <h5>Average</h5>
+                            </div>
+                        </div>
+                        <div id="specificChart2" class="donut-size prog1">
+                            <div class="pie-wrapper">
+                                <span class="label">
+                                    <span class="num">0</span><span class="smaller">%</span>
+                                </span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div style="font-size: 1rem; text-align: center;">
+                                <h5>Top</h5>
+                            </div>
+                        </div>
+                        <div id="specificChart3" class="donut-size prog1" >
+                            <div class="pie-wrapper">
+                                <span class="label">
+                                    <span class="num">0</span><span class="smaller">%</span>
+                                </span>
+                                <div class="pie">
+                                    <div class="left-side half-circle"></div>
+                                    <div class="right-side half-circle"></div>
+                                </div>
+                                <div class="shadow"></div>
+                            </div>
+                            <div style="font-size: 1rem; text-align: center;">
+                                <h5>Me</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="progressbar">
+                <h3 style="margin-bottom: 1.5rem;">Retirement Strategy</h3>
+                <h5 style="font-size: 0.81rem;">Employee Contribution</h5>
+                <div class="_slide">
+                    <div class="sliderjs">
+                        <input style="margin-top: 1.2rem;" type="range" min="1" max="20" value="12" class="slider" id="myRange">
+                        <p><span id="demo"></span>%</p>
+                    </div>
+                </div>
+                <h5 style="font-size: 0.85rem; margin-top: 1.5rem;">Employee Contribution</h5>
+                <div class="sliderjs">
+                    <input  style="margin-top: 1.2rem;" type="range" min="1" max="80" value="65" class="myslider slider" id="sliderRange">
+                    <p><span id="demo1"></span></p>
+                </div>
+                <div class="down_part">
+                    <div class="down_p">
+                        <h5 style="font-size: 0.81rem;">Employee Contribution</h5>
+                        <h5 style="font-size: 0.81rem; margin-left: 2rem;">8.4%</h5>
+                    </div>
+                    <div class="down_pr">
+                        <h5 style="font-size: 0.81rem;">Interest Rate</h5>
+                        <h5 style="font-size: 0.81rem;">5%</h5>
+                    </div>
+                    <button class="menu-btn1"> Update </i></button>
+                    <h5 class="docs">View Help Docs <i class="fas fa-angle-right"></i></i></h5>
+                </div>
+            </div>
+            <div class="leftborder">
+                <p style="font-size: 0.81rem;">Are you considering a <br> <b>Housing Advance?</b></p>
+                <p style="font-size: 0.81rem;margin-top: 0.5rem;margin-bottom: 0.5rem;">Limited time reduced interest</p>
+                <p style="font-size: 0.81rem;">Learn more <i class="fas fa-angle-right"></i></i></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+        integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+        crossorigin="anonymous"></script>
+    <script src="gsaspprogress.js"></script>
+    <script src="prog1.js"></script>
+    <script src="prog2.js"></script>
+    <script src="prog3.js"></script>
+    <script src="slider.js"></script>
+    <script src="slider2.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>     
