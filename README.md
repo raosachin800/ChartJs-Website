@@ -8,7 +8,7 @@
 ### ChartJs Desktop
 
 
-![Desktop](mobile_graph/desktop.png)
+![Desktop](desktop.png)
 
 </div>
 
@@ -17,9 +17,9 @@
 
 ### ChartJs Mobile
 
-![Mobile](mobile_graph/mobile_1.png)
-![Mobile](mobile_graph/mobile_2.png)
-![Mobile](mobile_graph/mobile_3.png)
+![Mobile](mobile_1.png)
+![Mobile](mobile_2.png)
+![Mobile](mobile_3.png)
 
 </div>
 
